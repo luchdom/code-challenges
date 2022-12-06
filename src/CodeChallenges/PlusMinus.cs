@@ -18,12 +18,6 @@ namespace CodeChallenges
             Execute(arr);
         }
 
-        /*
-           * Complete the 'plusMinus' function below.
-           *
-           * The function accepts INTEGER_ARRAY arr as parameter.
-           */
-
         private void Execute(List<int> arr)
         {
             int positive = 0, negative = 0, zero = 0;
@@ -50,8 +44,7 @@ namespace CodeChallenges
             PrintResult(positive, arr.Count);
             PrintResult(zero, arr.Count);
             PrintResult(negative, arr.Count);
-            Console.ReadKey();
-
+            Console.ReadKey();//just to pause cli
         }
 
         private static void PrintResult(int result, int arrayCount)
