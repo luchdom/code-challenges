@@ -44,7 +44,6 @@ namespace CodeChallenges
             PrintResult(positive, arr.Count);
             PrintResult(zero, arr.Count);
             PrintResult(negative, arr.Count);
-            Console.ReadKey();//just to pause cli
         }
 
         private static void PrintResult(int result, int arrayCount)
