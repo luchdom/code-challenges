@@ -3,14 +3,10 @@ using System.Globalization;
 
 namespace CodeChallenges
 {
-    public class PlusMinus : IChallenge
+    public class PlusMinus
     {
-        public void Run()
+        public void ReadConsoleAndExecute()
         {
-            ////Input
-            //Eg.: n=3; 
-            int n = Convert.ToInt32(Console.ReadLine().Trim());//Eg.: 
-
             //Eg.: arr = new List<int> { 0, 3, -1 };
             List<int> arr = Console.ReadLine()
                                    .TrimEnd()
@@ -20,10 +16,10 @@ namespace CodeChallenges
                                    .ToList();
 
             //Execute
-            Execute(arr);
+            CalculateRatio(arr);
         }
 
-        private void Execute(List<int> arr)
+        private void CalculateRatio(List<int> arr)
         {
             int positive = 0, negative = 0, zero = 0;
 

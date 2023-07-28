@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CodeChallenges
 {
-    public class MiniMaxSum : IChallenge
+    public class MiniMaxSum
     {
         public void Run()
         {
