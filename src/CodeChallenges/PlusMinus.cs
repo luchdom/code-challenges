@@ -12,7 +12,12 @@ namespace CodeChallenges
             int n = Convert.ToInt32(Console.ReadLine().Trim());//Eg.: 
 
             //Eg.: arr = new List<int> { 0, 3, -1 };
-            List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+            List<int> arr = Console.ReadLine()
+                                   .TrimEnd()
+                                   .Split(' ')
+                                   .ToList()
+                                   .Select(arrTemp => Convert.ToInt32(arrTemp))
+                                   .ToList();
 
             //Execute
             Execute(arr);
