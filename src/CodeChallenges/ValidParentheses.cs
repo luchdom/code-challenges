@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Globalization;
 
 namespace CodeChallenges
 {
-    public class ValidParentheses 
+    public class ValidParentheses
     {
         //Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -55,7 +55,36 @@ namespace CodeChallenges
             }
             return endings.Count == 0;
         }
+
+        public int CalPoints(string[] ops)
+        {
+            Stack<int> score = new Stack<int>();
+            for (int i = 0; i < ops.Length; i++)
+            {
+                if (ops[i] == "C")
+                {
+                    score.Pop();
+                }
+                else if (ops[i] == "D")
+                {
+                    int x = score.Peek();
+                    score.Push(x * 2);
+                }
+                else if (ops[i] == "+")
+                {
+                    int temp1 = score.Pop();
+                    int temp2 = score.Peek();
+                    score.Push(temp1);
+                    score.Push(temp1 + temp2);
+                }
+                else
+                    score.Push(Convert.ToInt32(ops[i], CultureInfo.InvariantCulture));
+            }
+            return score.Sum();
+        }
     }
 
-    
+
+
+
 }

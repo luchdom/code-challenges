@@ -7,6 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenges", "src\CodeC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AD51DC86-DA89-41AB-9E5F-3E75BB60CC72}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
@@ -15,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6E6EBF66-19B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9962A919-3CF3-4A81-9727-9DC280FE81B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeChallenges.Test", "test\CodeChallenges.Test\CodeChallenges.Test.csproj", "{CE694842-CB34-4878-BC60-D45DC6520754}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeChallenges.Test", "test\CodeChallenges.Test\CodeChallenges.Test.csproj", "{CE694842-CB34-4878-BC60-D45DC6520754}"
 	ProjectSection(ProjectDependencies) = postProject
 		{C624D74C-3BC6-41D6-98E6-606FE234F8EF} = {C624D74C-3BC6-41D6-98E6-606FE234F8EF}
 	EndProjectSection

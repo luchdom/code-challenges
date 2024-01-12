@@ -1,4 +1,4 @@
-﻿
+
 namespace CodeChallenges.Test
 {
     [TestFixture]
@@ -14,17 +14,21 @@ namespace CodeChallenges.Test
         [Test]
         public void OneItem()
         {
-            var names = new List<string>();
-            names.Add("Amy");
+            var names = new List<string>
+            {
+                "Amy"
+            };
             Assert.That(LikeFormatter.HumanFriendlyLikes(names), Is.EqualTo("Amy likes this"));
         }
 
         [Test]
         public void TwoItems()
         {
-            var names = new List<string>();
-            names.Add("Amy");
-            names.Add("Bob");
+            var names = new List<string>
+            {
+                "Amy",
+                "Bob"
+            };
             Assert.That(LikeFormatter.HumanFriendlyLikes(names), Is.EqualTo("Amy and Bob like this"));
         }
 
@@ -76,7 +80,8 @@ namespace CodeChallenges.Test
                 "B"
             };
 
-            for (int i = 0; i < 498; i++) names.Add("X");
+            for (int i = 0; i < 498; i++)
+                names.Add("X");
 
             Assert.That(LikeFormatter.HumanFriendlyLikes(names), Is.EqualTo("A, B and 498 others like this"));
         }

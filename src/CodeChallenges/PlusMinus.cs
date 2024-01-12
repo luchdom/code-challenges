@@ -1,4 +1,4 @@
-﻿
+
 using System.Globalization;
 
 namespace CodeChallenges
@@ -12,7 +12,7 @@ namespace CodeChallenges
                                    .TrimEnd()
                                    .Split(' ')
                                    .ToList()
-                                   .Select(arrTemp => Convert.ToInt32(arrTemp))
+                                   .Select(arrTemp => Convert.ToInt32(arrTemp, CultureInfo.InvariantCulture))
                                    .ToList();
 
             //Execute
